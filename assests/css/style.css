@@ -1,0 +1,177 @@
+body{
+    background: black;    
+    color: #fff;
+    font-family: 'Press Start 2P';
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    border: solid 1px #fff;
+    background: url('../img/space.gif');
+    margin: auto;
+}
+
+.grid div{
+    width: 20px;
+    height: 20px;
+}
+
+.shooter{
+    background: url('../img/shooter.png')
+}
+
+.invader{
+    background: url('../img/invader.png');
+}
+
+.boom{
+    background: url('../img/boom.png');
+}
+
+.laser{
+    background:url('../img/laser.png');
+}
+
+.play-again{
+    font-family: 'Press Start 2P',arcade;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h1{
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Press Start 2P',arcade;
+    color: #fff;
+}
+
+
+
+
+@font-face{
+    font-family: 'arcade';
+    src: url('../fonts/ArcadeClassic-ov2x.ttf');
+}
+
+
+
+ 
+
+.score{
+    align-items: center;
+    margin: auto;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    font-family: arcade;
+    color: red;
+    border: dashed 3px #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#score{
+    color: yellow;
+}
+
+@font-face{
+    font-family: 'gameover';
+    src: url('../fonts/gameOver.ttf');
+}
+
+
+.status{
+    font-size:40px;
+    text-align: center;
+    font-family: gameover;
+    animation-name: slidein;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    color: lawngreen;
+   
+}
+
+.mydiv{
+    height: 80px;
+    margin: 20px;
+    width: 100%;
+    background-color: #008000;
+    position: fixed;
+}
+
+
+
+  @keyframes slidein {
+    from{
+        margin-right: 100%;
+        width: 22%;
+    }
+    to{
+        margin-right: 100%;
+        width: 230%;
+    }
+   }
+
+#play-again{
+    font-family: 'Press Start 2P';
+}
+#loader{
+    background: black;
+}
+.loader{
+    background-image: url('../img/loader.gif');
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
+
+.attribution{
+    color: white;
+    text-align:center;
+}
+
+#level{
+    
+    color: white;
+}
+
+#level .gx{
+   width: 200px;
+   height: 200px;
+    background: url('../img/level.gif');
+    background-repeat: no-repeat;
+    margin: auto;
+
+}
+
+#level .levels{
+    list-style: url('../img/list.png');
+    align-items: center;
+    margin: auto;
+    width: 20%;
+}
+
+li{
+    border: green 1px solid;
+    margin: 30px;
+    text-align: center;
+    padding: 3px;
+    font-size: 2em ;
+    font-family: gameover;
+    box-shadow: 3px 3px palegreen;
+}
+
+li:hover{
+    list-style: url('../img/list2.png');
+    font-size: 2.3em;
+    border: white 1px solid;
+    background-color: green;
+    color: white;
+    box-shadow: 5px 5px palegreen;
+
+}
+
+
